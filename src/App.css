@@ -36,3 +36,100 @@
     transform: rotate(360deg);
   }
 }
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #185574;
+  color: white;
+}
+
+#csvFileInput {
+  display: none;
+}
+
+.csvFileInput {
+  background: #185574;
+  color: #ffff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.csvFileInput:hover {
+  background: #0f364a;
+}
+
+.fileName {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.importBtn {
+  background: #185574;
+  color: #ffff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #185574;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  position:fixed;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
